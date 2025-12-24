@@ -1,3 +1,10 @@
 import { Routes } from '@angular/router';
+import { CadastroComponent } from './features/cadastro/cadastro/cadastro.component';
+import { DadosComponent } from './features/dados/dados/dados.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    { path: '', component: CadastroComponent }, // rota principal
+    { path: 'cadastro', component: CadastroComponent }, 
+    { path: 'dados', component: DadosComponent },
+    { path: '**', redirectTo: '' } // fallback rota principal
+];
