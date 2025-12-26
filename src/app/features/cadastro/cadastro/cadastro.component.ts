@@ -32,9 +32,7 @@ export class CadastroComponent {
         email: this.email,
         senha: this.senha
       };
-
       this.storageService.setItem('usuario', usuario);
-
       this.router.navigate(['/dados']);
     } else {
       alert('E-mail inválido!');

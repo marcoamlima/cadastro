@@ -21,6 +21,7 @@ export class DadosComponent implements OnInit{
   ) {} 
   
   ngOnInit(): void { 
-    this.usuario = this.storageService.getItem<any>('usuario'); 
+    this.usuario = this.storageService.getItem<User>('usuario'); 
+    console.log(this.usuario)
   }
 }
